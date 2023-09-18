@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "build": "marp marp-slide.md --html -o docs/index.html",
+    "dev": "marp --server --html ./"
+  },
   "devDependencies": {
     "@marp-team/marp-cli": "^3.2.1"
+  },
+  "marp": {
+    "output": "./docs"
   }
 }
